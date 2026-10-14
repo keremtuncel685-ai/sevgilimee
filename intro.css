@@ -1,0 +1,37 @@
+/* CEREN / CINEMATIC INTRO — iOS Safari + desktop */
+html.intro-locked,body.intro-locked{overflow:hidden!important;overscroll-behavior:none}
+#cerenIntro[hidden]{display:none!important}
+#cerenIntro{position:fixed;inset:0;inset:0 0 0 0;z-index:5000;isolation:isolate;display:grid;place-items:center;background:#08080b;color:#fff;font-family:Arial,-apple-system,BlinkMacSystemFont,sans-serif;overflow:hidden;touch-action:pan-x pan-y;-webkit-font-smoothing:antialiased}
+#cerenIntro .ci-glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 52%,rgba(115,18,43,.25),transparent 55%)}
+#cerenIntro .ci-grain{position:absolute;inset:0;pointer-events:none;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")}
+#cerenIntro .ci-part{position:absolute;display:block;width:3px;height:3px;background:#e44768;border-radius:50%;opacity:0;left:var(--px);top:var(--py);box-shadow:0 0 14px #ff4468;animation:ciFloat var(--pd) ease-in-out infinite;animation-delay:var(--pl);pointer-events:none}
+@keyframes ciFloat{0%,100%{transform:translate3d(0,10px,0);opacity:0}45%{opacity:.78}65%{transform:translate3d(10px,-24px,0);opacity:.55}}
+#cerenIntro .ci-top{position:absolute;top:max(25px,env(safe-area-inset-top));left:0;right:0;text-align:center;color:#cda1ae;font-size:10px;letter-spacing:.32em;font-weight:600}
+#cerenIntro .ci-stage{width:min(90vw,940px);padding:20px;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;opacity:0;visibility:hidden;transition:opacity .8s ease,transform .8s ease;pointer-events:none}
+#cerenIntro .ci-stage.active{opacity:1;visibility:visible;transform:translate(-50%,-50%);pointer-events:auto}
+#cerenIntro .ci-stage.leaving{opacity:0;transform:translate(-50%,-54%);visibility:visible}
+#cerenIntro .ci-label{color:#df8295;letter-spacing:.3em;font-size:clamp(9px,2vw,12px);font-weight:700;margin:0 0 22px}
+#cerenIntro .ci-type{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;color:#f9e7e9;font-size:clamp(20px,4.1vw,47px);line-height:1.7;min-height:3.4em;font-weight:400;letter-spacing:-.04em;margin:0 auto;max-width:780px}
+#cerenIntro .ci-caret{display:inline-block;width:2px;height:1em;background:#e74b6f;vertical-align:-.15em;margin-left:4px;animation:ciBlink .7s steps(1) infinite}
+@keyframes ciBlink{50%{opacity:0}}
+#cerenIntro .ci-name{font-family:Georgia,'Times New Roman',serif;font-size:clamp(76px,19vw,230px);font-weight:400;line-height:1;letter-spacing:-.065em;color:#fff;text-shadow:0 0 55px #f75e7f5e;margin:0;animation:ciAppear 1.6s both}
+#cerenIntro .ci-name-sub{font-size:clamp(10px,2.4vw,14px);color:#e9abb7;letter-spacing:.24em;margin:25px 0 0}
+#cerenIntro .ci-number{font-family:Georgia,'Times New Roman',serif;font-size:clamp(175px,35vw,385px);font-weight:400;line-height:.86;letter-spacing:-.08em;color:#fff;text-shadow:0 0 90px #d1265040;animation:ciAppear 1s both}
+#cerenIntro .ci-number-sub{font-size:clamp(13px,3vw,20px);letter-spacing:.03em;color:#ffe3e9;margin:32px auto 0}
+#cerenIntro .ci-heart{width:60px;height:60px;margin:0 auto 23px;display:grid;place-items:center;font-size:38px;color:#ff557c;filter:drop-shadow(0 0 26px #d4235885);animation:ciBeat 1.5s infinite}
+@keyframes ciBeat{50%{transform:scale(1.17)}}
+@keyframes ciAppear{from{opacity:0;filter:blur(12px);transform:scale(.95)}to{opacity:1;filter:blur(0);transform:scale(1)}}
+#cerenIntro .ci-final-title{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(37px,8vw,80px);line-height:1.14;margin:0 0 20px;color:#fff}
+#cerenIntro .ci-final-copy{font-size:clamp(13px,3vw,17px);color:#d6aab5;line-height:1.8;margin:0 auto 29px;max-width:440px}
+#cerenIntro .ci-enter{border:1px solid #edc4ce87;background:rgba(255,255,255,.09);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border-radius:100px;min-height:56px;padding:16px 31px;color:white;font-family:inherit;font-weight:600;font-size:13px;letter-spacing:.065em;cursor:pointer;touch-action:manipulation;transition:background .25s,transform .25s}
+#cerenIntro .ci-enter:active{transform:scale(.96)}#cerenIntro .ci-enter:hover{background:#aa4c65}
+#cerenIntro .ci-skip{position:absolute;right:clamp(18px,4vw,55px);bottom:max(27px,env(safe-area-inset-bottom));background:transparent;border:0;color:#c8a2ae;font:600 11px Arial,sans-serif;letter-spacing:.13em;cursor:pointer;padding:14px;z-index:4;touch-action:manipulation}
+#cerenIntro .ci-bottom{position:absolute;left:clamp(19px,5vw,65px);bottom:max(39px,calc(env(safe-area-inset-bottom) + 12px));font:10px Arial,sans-serif;letter-spacing:.23em;color:#d29baa8c}
+#cerenIntro .ci-shutter{position:absolute;top:0;bottom:0;width:50.1%;z-index:10;background:#08080b;pointer-events:none;display:none}
+#cerenIntro .ci-shutter.left{left:0;transform-origin:left}#cerenIntro .ci-shutter.right{right:0;transform-origin:right}
+#cerenIntro.opening{background:transparent}#cerenIntro.opening .ci-shutter{display:block;animation:ciDoor 1.4s cubic-bezier(.78,0,.16,1) both}
+#cerenIntro.opening .ci-shutter.left{animation-name:ciDoorLeft}#cerenIntro.opening .ci-shutter.right{animation-name:ciDoorRight}
+#cerenIntro.opening .ci-stage,#cerenIntro.opening .ci-top,#cerenIntro.opening .ci-bottom,#cerenIntro.opening .ci-skip,#cerenIntro.opening .ci-glow,#cerenIntro.opening .ci-grain,#cerenIntro.opening .ci-part{opacity:0!important}
+@keyframes ciDoorLeft{from{transform:translateX(0)}to{transform:translateX(-102%)}}@keyframes ciDoorRight{from{transform:translateX(0)}to{transform:translateX(102%)}}
+@media(max-width:600px){#cerenIntro .ci-name{font-size:clamp(68px,20vw,108px)}#cerenIntro .ci-stage{width:96vw;padding:12px}#cerenIntro .ci-type{font-size:clamp(19px,5vw,29px)}#cerenIntro .ci-top{letter-spacing:.2em}#cerenIntro .ci-number{font-size:clamp(155px,47vw,240px)}#cerenIntro .ci-final-title{font-size:clamp(36px,10vw,55px)}}
+@media(prefers-reduced-motion:reduce){#cerenIntro .ci-part,#cerenIntro .ci-heart,#cerenIntro .ci-caret{animation:none}#cerenIntro .ci-stage{transition:none}#cerenIntro .ci-name,#cerenIntro .ci-number{animation:none}#cerenIntro.opening .ci-shutter{animation-duration:.2s}}

@@ -1,0 +1,181 @@
+/* CEREN / 99 DIL — iPhone Safari + desktop uyumlu, yalnizca bu bolumu etkiler */
+.love99 {
+  --love-red: #ff3159;
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  min-height: 560px;
+  overflow: hidden;
+  background: #050406;
+  color: #fff;
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+}
+.love99, .love99 * { box-sizing: border-box; }
+.love99::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(ellipse at 50% 53%, rgba(100,0,25,.18), transparent 56%),
+              linear-gradient(135deg, rgba(255,49,89,.045), transparent 36%);
+  pointer-events: none;
+}
+.love99::after {
+  content: "";
+  position: absolute;
+  z-index: 7;
+  inset: 0;
+  opacity: .16;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.26'/%3E%3C/svg%3E");
+}
+.love99-chrome { position: absolute; z-index: 9; top: clamp(27px, 4.5vh, 56px); left: clamp(20px, 5vw, 80px); right: clamp(20px, 5vw, 80px); display: flex; justify-content: space-between; gap: 16px; align-items: baseline; pointer-events: none; }
+.love99-kicker, .love99-date { font-size: 10px; font-weight: 500; letter-spacing: .27em; color: #d9c6cb; text-transform: uppercase; }
+.love99-kicker b { color: var(--love-red); font-weight: 700; }
+.love99-date { opacity: .56; }
+.love99-wall { position: absolute; z-index: 1; inset: 0; pointer-events: none; }
+.love99-word {
+  position: absolute;
+  display: block;
+  max-width: none;
+  color: var(--love-red);
+  font-size: clamp(7px, .76vw, 10px);
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  opacity: 0;
+  text-shadow: 0 0 14px rgba(255,40,75,.20);
+  transform: translate(-50%, -50%) scale(.84);
+  will-change: left, top, opacity, transform;
+  transition: opacity .7s ease, transform 2.3s cubic-bezier(.19,1,.22,1), left 2.3s cubic-bezier(.19,1,.22,1), top 2.3s cubic-bezier(.19,1,.22,1);
+  direction: ltr;
+  unicode-bidi: plaintext;
+}
+.love99-word.is-visible { opacity: .54; transform: translate(-50%, -50%) scale(1); }
+.love99.is-morphing .love99-word.is-visible { opacity: 1; transform: translate(-50%, -50%) rotate(var(--heart-rotate, 0deg)) scale(var(--heart-word-scale, .92)); text-shadow: 0 0 6px rgba(255,49,89,.22); }
+.love99-typing {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: min(88%, 920px);
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  text-align: center;
+  transition: opacity .65s ease, transform .75s ease;
+}
+.love99-lang { display: block; color: #bd9da5; font-size: 11px; font-weight: 600; letter-spacing: .28em; text-transform: uppercase; margin-bottom: 23px; min-height: 15px; }
+.love99-current { color: var(--love-red); font-family: inherit; font-weight: 750; font-size: clamp(29px, 5.5vw, 90px); line-height: 1.15; letter-spacing: -.045em; overflow-wrap: anywhere; text-shadow: 0 0 35px rgba(255,49,89,.19); }
+.love99-current::after { display: inline-block; content: ""; width: .055em; height: .87em; margin-left: .09em; background: var(--love-red); vertical-align: -.08em; animation: love99Caret .8s steps(1,end) infinite; }
+.love99.is-morphing .love99-typing { opacity: 0; transform: translate(-50%, -50%) scale(.86); pointer-events: none; }
+@keyframes love99Caret { 50% { opacity: 0; } }
+.love99-heart {
+  position: absolute;
+  z-index: 3;
+  left: 50%; top: 47%;
+  transform: translate(-50%, -50%);
+  width: min(58vw, 485px);
+  aspect-ratio: 10 / 9;
+  max-height: 62%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.love99.is-morphing .love99-heart { opacity: 1; }
+.love99-outline-svg { width: 100%; height: 100%; overflow: visible; }
+.love99-outline {
+  fill: none;
+  stroke: none; /* KALBI CIZGI DEGIL, 99 FARKLI YAZI OLUSTURUYOR */
+  stroke-width: 0;
+  vector-effect: non-scaling-stroke;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  filter: drop-shadow(0 0 7px rgba(255,25,72,.75));
+}
+/* SVG yolu sadece metin konumlarini hesaplamak icin kullanilir; asla cizilmez. */
+@keyframes love99Draw { to { stroke-dashoffset: 0; } }
+.love99-center {
+  position: absolute;
+  z-index: 5;
+  left: 50%; top: 47%;
+  transform: translate(-50%, -50%) scale(.88);
+  opacity: 0;
+  text-align: center;
+  transition: opacity .75s ease, transform 1.1s cubic-bezier(.2,1,.3,1);
+  pointer-events: none;
+}
+.love99.is-complete .love99-center { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+.love99-letter {
+  display: inline-block;
+  color: #fff;
+  font-size: clamp(90px, 12vw, 135px);
+  font-weight: 800;
+  letter-spacing: -.08em;
+  line-height: .9;
+  text-shadow: 0 0 40px rgba(255,255,255,.12);
+}
+.love99-letter::after { content: ""; display: inline-block; width: .048em; height: .77em; margin-left: .08em; background: #fff; animation: love99Caret .85s steps(1,end) infinite; }
+.love99-dedication { margin-top: 21px; font-size: clamp(8px, 1vw, 12px); font-weight: 600; letter-spacing: .38em; white-space: nowrap; color: #eee0e4; }
+.love99-hud {
+  position: absolute;
+  z-index: 8;
+  bottom: clamp(34px, 6vh, 70px);
+  left: clamp(20px, 5vw, 80px);
+  right: clamp(20px, 5vw, 80px);
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 18px;
+}
+.love99-progress { display: flex; flex-direction: column; gap: 13px; min-width: 160px; }
+.love99-count { font-size: 11px; letter-spacing: .21em; color: #ded0d3; font-variant-numeric: tabular-nums; }
+.love99-count strong { color: var(--love-red); font-size: 19px; font-weight: 700; letter-spacing: 0; }
+.love99-progress-track { width: min(32vw, 260px); height: 2px; background: #302328; overflow: hidden; }
+.love99-progress-fill { display: block; width: 0; height: 100%; background: var(--love-red); box-shadow: 0 0 9px var(--love-red); transition: width .25s ease; }
+.love99-action { -webkit-appearance: none; appearance: none; display: inline-flex; align-items: center; justify-content: center; padding: 14px 20px; min-height: 44px; background: rgba(255,255,255,.055); border: 1px solid rgba(255,255,255,.23); border-radius: 99px; color: #fff; font: 600 11px/1.2 ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, monospace; letter-spacing: .09em; cursor: pointer; touch-action: manipulation; transition: background .2s ease, border-color .2s ease; }
+.love99-action:hover, .love99-action:focus-visible { background: #4f1424; border-color: var(--love-red); }
+.love99-final-note { position: absolute; z-index: 6; bottom: 11.5%; left: 50%; transform: translateX(-50%); font-size: clamp(9px, 1.1vw, 12px); letter-spacing: .23em; white-space: nowrap; color: #b5a1a7; opacity: 0; transition: opacity .7s ease; }
+.love99.is-complete .love99-final-note { opacity: 1; }
+.love99-bottom-link { display: none; position: absolute; z-index: 8; left: 50%; transform: translateX(-50%); bottom: 19px; color: #ddd0d3; font-size: 10px; text-decoration: none; letter-spacing: .14em; white-space: nowrap; }
+.love99.is-complete .love99-bottom-link { display: block; }
+@media (max-width: 720px) {
+  .love99 { min-height: 600px; }
+  .love99-chrome { top: 31px; left: 23px; right: 23px; }
+  .love99-kicker { font-size: 9px; letter-spacing: .15em; }
+  .love99-date { font-size: 9px; letter-spacing: .08em; }
+  .love99-word { font-size: clamp(6px, 1.55vw, 8px); max-width: none; }
+  .love99-typing { width: 90%; top: 48%; }
+  .love99-current { font-size: clamp(26px, 7.5vw, 49px); }
+  .love99-lang { font-size: 9px; margin-bottom: 18px; }
+  .love99-heart { width: min(83vw, 345px); top: 47%; max-height: 53%; }
+  .love99-center { top: 47%; }
+  .love99-letter { font-size: clamp(65px, 21vw, 105px); }
+  .love99-dedication { font-size: 8px; letter-spacing: .19em; }
+  .love99-hud { bottom: 49px; left: 23px; right: 23px; align-items: center; }
+  .love99-progress { min-width: 115px; }
+  .love99-progress-track { width: 110px; }
+  .love99-action { padding: 12px 14px; font-size: 10px; }
+  .love99-final-note { bottom: 14%; font-size: 8px; letter-spacing: .13em; }
+  .love99-bottom-link { bottom: 18px; }
+}
+@media (max-height: 620px) and (orientation: landscape) { .love99 { min-height: 470px; } .love99-heart { width: min(48vw, 375px); top: 48%; } .love99-center { top: 48%; } .love99-letter { font-size: 100px; } .love99-final-note { bottom: 11%; } .love99-hud { bottom: 23px; } }
+@media (prefers-reduced-motion: reduce) { .love99-word, .love99-heart, .love99-center, .love99-typing, .love99-progress-fill { transition-duration: .01ms !important; } .love99.is-morphing .love99-outline { animation-duration: .01ms !important; animation-delay: 0ms !important; } .love99-letter::after, .love99-current::after { animation: none !important; } }
+
+/* 2026 - Ortalanmış daha ufak kalp ve C; iPhone Safari uyumlu */
+.love99-heart{left:50%;top:47%;width:min(54vw,440px);max-height:57%}
+.love99-center{left:50%;top:49.5%;width:max-content;max-width:90%;transform:translate(-50%,-50%) scale(.88)}
+.love99.is-complete .love99-center{transform:translate(-50%,-50%) scale(1)}
+.love99-letter{font-size:clamp(66px,9vw,104px);letter-spacing:0;position:relative;line-height:1;transform:translateX(-.06em)}
+.love99-letter::after{position:absolute;left:100%;top:.09em;margin:0;height:.78em}
+.love99-dedication{margin-top:15px;font-size:clamp(8px,.85vw,10px);letter-spacing:.22em}
+@media(max-width:720px){
+ .love99-heart{width:min(77vw,320px);top:46%;max-height:52%}
+ .love99-center{top:48.5%}
+ .love99-letter{font-size:clamp(56px,17vw,76px)}
+ .love99-dedication{font-size:8px;letter-spacing:.12em}
+}
+@media(max-height:620px) and (orientation:landscape){.love99-heart{width:min(46vw,340px);top:45%}.love99-center{top:48%}}

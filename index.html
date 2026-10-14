@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8f2ee">
+  <meta name="description" content="Ceren için, 25 Mayıs’ta başlayan ve nice güzel yarınlara uzanan hikâyemiz. 15 Ekim 2026.">
+  <meta property="og:title" content="Ceren — Chapter 22">
+  <meta property="og:description" content="Bu küçük evrende en güzel hikâye sensin.">
+  <title>Ceren ♡ Chapter 22</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&display=swap" rel="stylesheet">
+  <script>
+(function(){
+  var target = Date.parse('2026-10-15T00:00:00+03:00');
+  if (Date.now() < target) document.documentElement.classList.add('ceren-countdown-pending');
+})();
+</script>
+  <link rel="stylesheet" href="countdown.css?v=20261014-final3">
+  <link rel="stylesheet" href="style.css?v=20261014-final3">
+  <link rel="stylesheet" href="love99.css?v=20261014-final3">
+  <link rel="stylesheet" href="intro.css?v=20261014-final3">
+  <link rel="stylesheet" href="videos.css?v=20261014-final3">
+  <link rel="stylesheet" href="surprises.css?v=20261014-final3">
+  <script src="script.js?v=20261014-final3" defer></script>
+  <script src="love99.js?v=20261014-final3" defer></script>
+  <script src="countdown.js?v=20261014-final3" defer></script>
+  <script src="intro.js?v=20261014-final3" defer></script>
+  <script src="videos.js?v=20261014-final3" defer></script>
+  <script src="surprises.js?v=20261014-final3" defer></script>
+</head>
+<body>
+<div id="cerenCountdown" class="cd-gate" role="region" aria-label="Ceren için doğum günü geri sayımı">
+  <div class="cd-ambient" aria-hidden="true"></div>
+  <div class="cd-top">SADECE CEREN İÇİN <span class="cd-top-heart">♡</span> CHAPTER 22</div>
+  <div class="cd-content">
+    <div class="cd-eyebrow">BİR SÜRPRİZ HAZIRLANIYOR</div>
+    <div class="cd-icon" aria-hidden="true">♡</div>
+    <h1>Güzel şeyler<br><em>beklemeye değer.</em></h1>
+    <p class="cd-sub">15 Ekim'de, tam gece yarısı<br>sana ait küçük bir dünya açılacak.</p>
+    <div class="cd-clock" role="timer" aria-label="Doğum gününe kalan süre">
+      <div class="cd-unit"><strong id="cdDays">00</strong><span>GÜN</span></div>
+      <div class="cd-colon">:</div>
+      <div class="cd-unit"><strong id="cdHours">00</strong><span>SAAT</span></div>
+      <div class="cd-colon">:</div>
+      <div class="cd-unit"><strong id="cdMinutes">00</strong><span>DAKİKA</span></div>
+      <div class="cd-colon">:</div>
+      <div class="cd-unit"><strong id="cdSeconds">00</strong><span>SANİYE</span></div>
+    </div>
+    <p class="cd-footer-note">Biraz daha sabır, sevgilim. 🤍</p>
+  </div>
+  <div class="cd-bottom">15 · 10 · 2026 &nbsp; | &nbsp; 00:00 TÜRKİYE SAATİ</div>
+</div>
+<div id="cerenIntro" role="region" aria-label="Ceren için doğum günü açılışı">
+  <div class="ci-glow" aria-hidden="true"></div><div class="ci-grain" aria-hidden="true"></div><div class="ci-particles" aria-hidden="true"></div>
+  <div class="ci-top">15 · 10 · 2026 &nbsp; / &nbsp; OUR LITTLE UNIVERSE</div>
+  <div class="ci-stage active"><p class="ci-label">BU HİKÂYE SADECE SANA</p><p class="ci-type"><span id="ciTypeText"></span><span class="ci-caret" aria-hidden="true"></span></p></div>
+  <div class="ci-stage"><p class="ci-label">VE BENİM EN GÜZEL TESADÜFÜM...</p><h2 class="ci-name">CEREN</h2><p class="ci-name-sub">MY FAVORITE PERSON</p></div>
+  <div class="ci-stage"><p class="ci-label">BUGÜN SENİN GÜNÜN</p><div class="ci-number">22</div><p class="ci-number-sub">İyi ki doğdun, sevgilim.</p></div>
+  <div class="ci-stage"><div class="ci-heart" aria-hidden="true">♥</div><h2 class="ci-final-title">Sana küçük bir<br>dünyam var.</h2><p class="ci-final-copy">25 Mayıs’ta başlayan hikâyemizin en güzel bölümüne hoş geldin.</p><button id="ciEnter" class="ci-enter" type="button">Dünyama gir &nbsp; ↗</button></div>
+  <div class="ci-bottom" aria-hidden="true">MADE WITH LOVE · CHAPTER 22</div>
+  <button class="ci-skip" id="ciSkip" type="button">GEÇ →</button>
+  <div class="ci-shutter left" aria-hidden="true"></div><div class="ci-shutter right" aria-hidden="true"></div>
+</div>
+  <div class="film-grain" aria-hidden="true"></div>
+  <div class="reading-progress" id="readingProgress" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <!-- Tüm ekrandaki kalpler: dokunuşları ve bağlantıları engellemez. -->
+  <div class="touch-hearts" id="touchHearts" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="wordmark" href="#home" aria-label="Başa dön">C<span class="wordmark-flower">✳</span>22 <small>our little universe</small></a>
+    <div class="topbar-actions">
+      <span class="desktop-only top-date">15 · 10 · 2026</span>
+      <button class="sound-toggle" id="soundToggle" type="button" aria-label="Müziği başlat" aria-pressed="false">
+        <span class="sound-symbol" id="soundSymbol">♪</span> <span id="soundText">Müziği aç</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero viewport-section" id="home" aria-labelledby="heroTitle">
+      <div class="hero-halo halo-one" aria-hidden="true"></div>
+      <div class="hero-halo halo-two" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="eyebrow reveal"><span class="eyebrow-line"></span> SADECE CEREN İÇİN <span class="eyebrow-line"></span></div>
+        <p class="hero-kicker reveal">BİR DOĞUM GÜNÜNDEN ÇOK DAHA FAZLASI</p>
+        <h1 id="heroTitle" class="hero-title reveal">Ceren<span class="hero-dot">.</span></h1>
+        <div class="hero-script reveal">Chapter <em>22</em></div>
+        <p class="hero-copy reveal">Dünyanın milyonlarca hikâyesi var.<br>Benim en sevdiğim, <strong>seninle başlayan.</strong></p>
+        <a class="primary-link reveal" href="#chapter-one"><span>Hikâyemize başla</span><span class="button-arrow" aria-hidden="true">↘</span></a>
+      </div>
+      <div class="hero-side-note">MADE WITH LOVE · 2026</div>
+      <a href="#chapter-one" class="scroll-cue" aria-label="Aşağı kaydır"><span>SCROLL TO FEEL</span><span class="scroll-cue-line"></span></a>
+      <span class="tiny-spark spark-one" aria-hidden="true">✳</span><span class="tiny-spark spark-two" aria-hidden="true">✦</span>
+    </section>
+
+    <section class="intro section-pad" id="chapter-one" aria-labelledby="introTitle">
+      <div class="section-container intro-layout">
+        <div class="intro-label reveal"><span class="section-index">01 / BİZ</span><span class="mini-rule"></span><span class="side-caption">SOMETIMES, HOME IS A PERSON</span></div>
+        <div class="intro-main">
+          <p class="overline reveal">25 MAYIS’TAN BERİ · BİNLERCE GÜZEL AN</p>
+          <h2 id="introTitle" class="display-title reveal">İyi ki <em>biz</em><br>olmuşuz.</h2>
+          <p class="section-copy reveal">25 Mayıs’ta başlayan bu hikâye, gün geçtikçe hayatımın en güzel yerine dönüştü. Gülüşünde huzur bulduğum, en sıradan günü bile özel yapan insan… <strong>İyi ki sen.</strong></p>
+          <div class="stat-row reveal">
+            <div class="stat-item"><span class="stat-number">25.05</span><span class="stat-label">HİKÂYEMİZİN BAŞLANGICI</span></div>
+            <span class="stat-sep" aria-hidden="true"></span>
+            <div class="stat-item"><span class="stat-number">22</span><span class="stat-label">YAŞININ EN GÜZEL HALİ</span></div>
+            <span class="stat-sep" aria-hidden="true"></span>
+            <div class="stat-item"><span class="stat-number">∞</span><span class="stat-label">HAYAL ETTİĞİM YARIN</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="photo-interlude" aria-label="Birlikte anılarımız">
+      <div class="interlude-art" id="interludePhoto"><div class="interlude-placeholder"><span>Us, in a thousand little moments.</span><small>BURAYA BİRLİKTE FOTOĞRAFINIZ GELECEK</small></div></div>
+      <div class="interlude-shade"></div>
+      <div class="interlude-content reveal"><span class="overline light">THE LOVE I NEVER KNEW I NEEDED</span><h2>Her şeyin içinde<br><em>biraz sen varsın.</em></h2><p>Ve bu, her şeyi güzelleştiriyor.</p></div>
+      <span class="interlude-bottom">CEREN & BEN · OUR STORY</span>
+    </section>
+
+    <section class="moments section-pad" id="moments" aria-labelledby="momentsTitle">
+      <div class="section-container">
+        <div class="section-heading reveal"><div><p class="overline">02 / GÜZEL ANLAR</p><h2 id="momentsTitle" class="display-title">Küçük anlar.<br><em>Kocaman hisler.</em></h2></div><p class="section-heading-note">En güzel fotoğraflar bazen kameraya değil, kalbe çekiliyor.</p></div>
+        <div class="gallery" id="gallery" aria-label="Fotoğraf galerimiz"></div>
+        <p class="gallery-footnote reveal">PS: HER FOTOĞRAFIN ARKASINDA ANLATACAK BİR HİKÂYEMİZ VAR <span>✳</span></p>
+      </div>
+    </section>
+
+
+    <section class="sx-section sx-gallery-section" id="sx-gallery" aria-labelledby="sx-gallery-title">
+      <div class="sx-wrap"><p class="sx-eyebrow">ANILARIMIZ / CAMERA ROLL</p><h2 id="sx-gallery-title" class="sx-heading">Kalbimin <em>fotoğraf arşivi.</em></h2><p class="sx-desc">Sağa kaydır, bir fotoğrafa dokun. Her karede biraz daha biz varız.</p>
+      <div class="sx-filmstrip" id="sxFilmstrip" aria-label="Kaydırılabilir anı galerisi"></div><p class="sx-gallery-hint">KAYDIR → &nbsp; · &nbsp; FOTOĞRAFA DOKUN</p></div>
+    </section>
+
+    <section class="memory-video-section" id="memory-video2" aria-labelledby="title-video2">
+      <div class="memory-video-layout">
+        <div class="memory-video-copy reveal">
+          <p class="overline">02 / KÜÇÜK ANLAR</p>
+          <h2 id="title-video2" class="display-title">En sevdiğim anımız</h2>
+          <p>Keşke bu anı sonsuza kadar saklayabilsem.</p>
+          <span class="memory-video-side-note">Bazen bir saniye, bir ömre değer.</span>
+        </div>
+        <div class="memory-video-shell reveal" data-memory-video="video2">
+          <div class="memory-video-frame">
+            <video class="memory-video-player" playsinline webkit-playsinline preload="metadata" controls controlslist="nodownload" poster="" aria-label="En sevdiğim anımız" style="display:none">
+              <source src="video2.mp4" type="video/mp4">
+            </video>
+            <div class="memory-video-placeholder" aria-hidden="true">
+              <div class="memory-video-orb"></div>
+              <span class="memory-video-monogram">C <i>♡</i> K</span>
+              <span class="memory-video-placeholder-no">02 / 03</span>
+              <span class="memory-video-placeholder-message">BİRLİKTE SAKLADIĞIMIZ BİR ANI</span>
+            </div>
+            <div class="memory-video-play-overlay" hidden>
+              <button type="button" class="memory-video-play" aria-label="En sevdiğim anımız videosunu oynat"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+              <span>İZLEMEK İÇİN DOKUN</span>
+            </div>
+          </div>
+          <div class="memory-video-caption"><span>OUR LITTLE UNIVERSE</span><span>15.10.2026 ♡</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="letter-section section-pad" id="letter" aria-labelledby="letterTitle">
+      <div class="letter-bg-word" aria-hidden="true">love letter</div>
+      <div class="section-container letter-layout">
+        <div class="letter-heading reveal"><p class="overline">03 / KALBİMDEN</p><h2 id="letterTitle" class="display-title">Sana söylemek<br>istediğim <em>bir şey var.</em></h2><p class="section-copy">Bazen kelimeler az gelir. Ama yine de denemek istedim. Bu mektup, sadece senin.</p></div>
+        <button class="envelope reveal" id="openLetter" type="button" aria-label="Ceren'e mektubu aç">
+          <span class="envelope-back"></span><span class="envelope-paper">for my favorite person<br><strong>Ceren ♡</strong></span><span class="envelope-front"></span><span class="wax-seal">C</span>
+          <span class="envelope-instruction">AÇMAK İÇİN DOKUN <span>↗</span></span>
+        </button>
+      </div>
+    </section>
+
+
+    <section class="sx-section sx-secret-section" id="sx-secret" aria-labelledby="sx-secret-title">
+      <div class="sx-wrap sx-centered"><p class="sx-eyebrow">YALNIZCA SENİN İÇİN</p><h2 id="sx-secret-title" class="sx-heading">Bir mektup daha…<br><em>ama bu biraz gizli.</em></h2>
+      <button class="sx-seal-envelope" id="sxOpenSecret" type="button" aria-label="Gizli aşk mektubunu aç"><span class="sx-envelope-flap"></span><span class="sx-envelope-face"></span><span class="sx-wax">C</span></button>
+      <p class="sx-desc">Mühre dokun, sadece sana yazdığım satırları oku.</p></div>
+    </section>
+
+    <section class="reasons section-pad" id="reasons" aria-labelledby="reasonsTitle">
+      <div class="section-container">
+        <div class="reasons-heading reveal"><p class="overline">04 / TAM 22 NEDEN</p><h2 id="reasonsTitle" class="display-title">Seni sevmek için<br><em>22 küçük neden.</em></h2><p>Her karta dokun. Her biri, seninle ilgili küçük bir gerçek. <span class="count-indicator" id="revealCount">0 / 22 açıldı</span></p></div>
+        <div class="reasons-grid" id="reasonsGrid"></div>
+        <div class="reasons-after reveal"><span class="tiny-spark">✳</span><p>Aslında 22 neden yetmez.<br><strong>Çünkü bazı sevgiler sayılara sığmaz.</strong></p></div>
+      </div>
+    </section>
+
+
+    <section class="sx-section sx-gift-section" id="sx-gift" aria-labelledby="sx-gift-title"><div class="sx-wrap sx-centered">
+      <p class="sx-eyebrow">SANA KÜÇÜK BİR SÜRPRİZ</p><h2 id="sx-gift-title" class="sx-heading">Bir hediyem <em>var.</em></h2>
+      <p class="sx-desc">Kutunun üstüne dokun. İçinden ne çıkacağını söylemeyeceğim.</p>
+      <button type="button" class="sx-gift" id="sxGift" aria-label="Hediye kutusunu aç" aria-expanded="false"><span class="sx-gift-lid"><i></i></span><span class="sx-gift-box"><i></i></span><span class="sx-gift-glow"></span></button>
+      <div class="sx-gift-reveal" id="sxGiftReveal" aria-live="polite"><span class="sx-gift-small">SANA VEREBİLECEĞİM EN GÜZEL SÖZ</span><strong>Her yeni yaşında<br>yanında olmayı diliyorum.</strong><span>İyi ki sen, Ceren. 🤍</span></div>
+      <button type="button" class="sx-replay" id="sxGiftReplay" hidden>Hediyeyi yeniden aç ↻</button>
+    </div></section>
+
+    <section class="memory-video-section" id="memory-video1" aria-labelledby="title-video1">
+      <div class="memory-video-layout">
+        <div class="memory-video-copy reveal">
+          <p class="overline">05 / SENİNLE BİZ</p>
+          <h2 id="title-video1" class="display-title">Bizim hikâyemiz</h2>
+          <p>Seninle geçen her an, en sevdiğim hikâyem.</p>
+          <span class="memory-video-side-note">25 Mayıs’tan beri, sayısız güzel anı.</span>
+        </div>
+        <div class="memory-video-shell reveal" data-memory-video="video1">
+          <div class="memory-video-frame">
+            <video class="memory-video-player" playsinline webkit-playsinline preload="metadata" controls controlslist="nodownload" poster="" aria-label="Bizim hikâyemiz" style="display:none">
+              <source src="video1.mp4" type="video/mp4">
+            </video>
+            <div class="memory-video-placeholder" aria-hidden="true">
+              <div class="memory-video-orb"></div>
+              <span class="memory-video-monogram">C <i>♡</i> K</span>
+              <span class="memory-video-placeholder-no">01 / 03</span>
+              <span class="memory-video-placeholder-message">BİRLİKTE SAKLADIĞIMIZ BİR ANI</span>
+            </div>
+            <div class="memory-video-play-overlay" hidden>
+              <button type="button" class="memory-video-play" aria-label="Bizim hikâyemiz videosunu oynat"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+              <span>İZLEMEK İÇİN DOKUN</span>
+            </div>
+          </div>
+          <div class="memory-video-caption"><span>OUR LITTLE UNIVERSE</span><span>15.10.2026 ♡</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline section-pad" id="timeline" aria-labelledby="timelineTitle">
+      <div class="section-container">
+        <div class="section-heading reveal"><div><p class="overline">05 / BİZİM ZAMANIMIZ</p><h2 id="timelineTitle" class="display-title">Daha başlangıç<br><em>güzelim.</em></h2></div><p class="section-heading-note">25 Mayıs’tan beri birlikte geçen günler. Ve daha yaşayacağımız nice şey.</p></div>
+        <div class="timeline-track">
+          <div class="timeline-item reveal"><div class="timeline-index">01</div><div class="timeline-mark"></div><div><span class="timeline-tag">İLK BÖLÜM</span><h3>İlk kez “biz” olduğumuz an</h3><p>Her güzel hikâye bir yerden başlar. Bizimki de kalbimde hep ayrı kalacak bir yerde başladı.</p></div></div>
+          <div class="timeline-item reveal"><div class="timeline-index">02</div><div class="timeline-mark"></div><div><span class="timeline-tag">BUGÜNE KADAR</span><h3>Bir tarih, tek bir his</h3><p>Araya telaşlar, yoğun günler girse de senin hayatımdaki yerin hep çok özel.</p></div></div>
+          <div class="timeline-item reveal"><div class="timeline-index">03</div><div class="timeline-mark"></div><div><span class="timeline-tag">15 EKİM 2026</span><h3>Senin 22. bölümün</h3><p>Yeni yaşın sana gülümseyeceğin günler, güzel sürprizler ve hak ettiğin tüm mutlulukları getirsin.</p></div></div>
+          <div class="timeline-item reveal future-item"><div class="timeline-index">∞</div><div class="timeline-mark"></div><div><span class="timeline-tag">TO BE CONTINUED...</span><h3>Henüz yazmadığımız sayfalar</h3><p>Birlikte göreceğimiz yerler, söyleyeceğimiz şarkılar, biriktireceğimiz anılar… En güzelleri önümüzde.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="sx-section sx-time-section" id="sx-time" aria-labelledby="sx-time-title"><div class="sx-wrap sx-centered">
+      <p class="sx-eyebrow">BİZİM ZAMANIMIZ</p><h2 id="sx-time-title" class="sx-heading">Seninle geçen <em>her saniye.</em></h2>
+      <p class="sx-desc" id="sxTimeNote">Başlangıç tarihimizi eklediğimizde sayaç burada çalışacak.</p>
+      <div class="sx-clock" id="sxClock" aria-live="off"><div><strong id="sxDays">—</strong><span>GÜN</span></div><div><strong id="sxHours">—</strong><span>SAAT</span></div><div><strong id="sxMinutes">—</strong><span>DAKİKA</span></div><div><strong id="sxSeconds">—</strong><span>SANİYE</span></div></div>
+      <p class="sx-clock-quote">Ve ben her gün seni yeniden seçiyorum.</p>
+    </div></section>
+    <section class="sx-section sx-music-section" id="sx-music" aria-labelledby="sx-music-title"><div class="sx-wrap sx-centered">
+      <p class="sx-eyebrow">OUR SONG / NOW PLAYING</p><h2 id="sx-music-title" class="sx-heading">Bizim <em>şarkımız.</em></h2>
+      <div class="sx-player"><div class="sx-record" id="sxRecord" aria-hidden="true"><span class="sx-record-label">C <i>♡</i> K</span></div>
+        <div class="sx-track"><strong>Bizim Şarkımız</strong><span>Kerem ♡ Ceren · Chapter 22</span></div>
+        <button type="button" class="sx-play" id="sxPlay" aria-label="Şarkıyı oynat">▶</button>
+        <div class="sx-track-progress"><span id="sxTrackProgress"></span></div><div class="sx-track-times"><span id="sxElapsed">0:00</span><span id="sxDuration">0:00</span></div>
+        <p class="sx-player-note" id="sxPlayerNote">Şarkımızı başlatmak için oynat tuşuna dokun. 🤍</p>
+      </div>
+    </div></section>
+
+    <section class="wish-section section-pad" id="wishes" aria-labelledby="wishTitle">
+      <div class="wish-ambient a" aria-hidden="true"></div><div class="wish-ambient b" aria-hidden="true"></div>
+      <div class="section-container wish-content reveal"><p class="overline light">06 / BİR DİLEK TUT</p><h2 id="wishTitle" class="display-title">Bütün güzel dilekler<br><em>seni bulsun.</em></h2><p>Şimdi bir dilek tut. Sonra mumlara dokun.<br>Belki dileğini bilmiyorum ama gerçekleştiğinde gülüşünü görmek istiyorum.</p>
+        <div class="cake-scene" id="cakeScene" aria-label="Doğum günü pastası ve mumlar"><div class="candle-row" aria-hidden="true"><span class="candle"><i class="flame"></i></span><span class="candle tall"><i class="flame"></i></span><span class="candle"><i class="flame"></i></span><span class="candle tall"><i class="flame"></i></span><span class="candle"><i class="flame"></i></span></div><div class="cake-top"></div><div class="cake-body"><span class="cake-text">22</span></div><div class="cake-base"></div></div>
+        <button class="wish-button" id="blowCandles" type="button">Mumları üfle <span>↗</span></button>
+        <p class="wish-result" id="wishResult" aria-live="polite"></p>
+      </div>
+    </section>
+
+
+    <section class="sx-section sx-stars-section" id="sx-stars" aria-labelledby="sx-stars-title"><div class="sx-stars-bg" aria-hidden="true"></div><div class="sx-wrap sx-centered">
+      <p class="sx-eyebrow">22 YILDIZ · 22 KÜÇÜK SIR</p><h2 id="sx-stars-title" class="sx-heading">Gökyüzünde bile <em>sen.</em></h2>
+      <p class="sx-desc">Yıldızlara dokun. Hepsini açtığında gökyüzü sana bir sürpriz hazırlayacak.</p>
+      <div class="sx-sky" id="sxSky" aria-label="22 dokunulabilir yıldız"><div class="sx-constellation" id="sxConstellation" aria-hidden="true">♡</div></div>
+      <p class="sx-star-message" id="sxStarMessage" aria-live="polite">İlk yıldızını seç…</p><p class="sx-star-count" id="sxStarCount">0 / 22 YILDIZ KEŞFEDİLDİ</p>
+    </div></section>
+
+    <!-- 99 DILDE SENI SEVIYORUM — SIYAH TAM EKRAN DAKTILO / KALP -->
+    <section class="love99" id="love99" aria-label="99 dilde seni seviyorum, Ceren için bir kalp animasyonu">
+      <div class="love99-chrome" aria-hidden="true">
+        <span class="love99-kicker"><b>07 /</b> 99 DİLDE SENİ SEVİYORUM</span>
+        <span class="love99-date">C ♡ 15.10.26</span>
+      </div>
+      <div class="love99-wall" id="love99Wall" aria-hidden="true"></div>
+      <div class="love99-typing" aria-live="off">
+        <span class="love99-lang" id="love99Language">99 DİLDE TEK CÜMLE</span>
+        <span class="love99-current" id="love99Current" dir="auto"></span>
+      </div>
+      <div class="love99-heart" aria-hidden="true">
+        <svg class="love99-outline-svg" id="love99Svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 900" preserveAspectRatio="xMidYMid meet">
+          <path id="love99Outline" class="love99-outline" pathLength="1000" d="M500 366 C390 120 58 85 68 330 C76 565 315 758 500 851 C685 758 924 565 932 330 C942 85 610 120 500 366 Z"/>
+        </svg>
+      </div>
+      <div class="love99-center" aria-label="Ceren'in baş harfi C">
+        <span class="love99-letter" id="love99C"></span>
+        <div class="love99-dedication">CEREN · SADECE SEN</div>
+      </div>
+      <p class="love99-final-note">99 DİL · TEK BİR KALP · SADECE CEREN</p>
+      <div class="love99-hud">
+        <div class="love99-progress">
+          <div class="love99-count"><strong id="love99Count">00</strong> / 99</div>
+          <div class="love99-progress-track"><span class="love99-progress-fill" id="love99Bar"></span></div>
+        </div>
+        <button type="button" class="love99-action" id="love99Button">KALBİ GÖSTER →</button>
+      </div>
+      <a class="love99-bottom-link" href="#finale">HİKÂYEMİZE DEVAM ET ↓</a>
+    </section>
+
+    <section class="memory-video-section" id="memory-video3" aria-labelledby="title-video3">
+      <div class="memory-video-layout">
+        <div class="memory-video-copy reveal">
+          <p class="overline">08 / SANA ÖZEL</p>
+          <h2 id="title-video3" class="display-title">Sana son bir şey…</h2>
+          <p>İyi ki doğdun, iyi ki benimlesin sevgilim.</p>
+          <span class="memory-video-side-note">Bu kez kelimeleri bir videoya bıraktım.</span>
+        </div>
+        <div class="memory-video-shell reveal" data-memory-video="video3">
+          <div class="memory-video-frame">
+            <video class="memory-video-player" playsinline webkit-playsinline preload="metadata" controls controlslist="nodownload" poster="" aria-label="Sana son bir şey…" style="display:none">
+              <source src="video3.mp4" type="video/mp4">
+            </video>
+            <div class="memory-video-placeholder" aria-hidden="true">
+              <div class="memory-video-orb"></div>
+              <span class="memory-video-monogram">C <i>♡</i> K</span>
+              <span class="memory-video-placeholder-no">03 / 03</span>
+              <span class="memory-video-placeholder-message">BİRLİKTE SAKLADIĞIMIZ BİR ANI</span>
+            </div>
+            <div class="memory-video-play-overlay" hidden>
+              <button type="button" class="memory-video-play" aria-label="Sana son bir şey… videosunu oynat"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+              <span>İZLEMEK İÇİN DOKUN</span>
+            </div>
+          </div>
+          <div class="memory-video-caption"><span>OUR LITTLE UNIVERSE</span><span>15.10.2026 ♡</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="finale section-pad" id="finale" aria-labelledby="finaleTitle"><div class="finale-orb" aria-hidden="true"></div><div class="section-container finale-content reveal"><p class="overline">08 / HER ŞEYİN EN GÜZELİ SENİN OLSUN</p><div class="birthday-number">22<span>✳</span></div><h2 id="finaleTitle">İyi ki doğdun,<br><em>Ceren.</em></h2><p>Hayatımda olduğun için, bana bu kadar güzel hissettirdiğin için, birlikte yazdığımız hikâyemizi böylesine anlamlı kıldığın için teşekkür ederim. Yeni yaşında hep mutlu ol. <strong>Seni çok seviyorum.</strong></p><span class="signature">İyi ki seninle, sevgilim. ♡</span><button class="finale-button" id="celebrateAgain" type="button">Biraz daha kutlayalım <span>✳</span></button></div></section>
+
+    <section class="sx-section sx-end-section" id="sx-end" aria-labelledby="sx-end-title"><div class="sx-end-aura" aria-hidden="true"></div><div class="sx-wrap sx-centered">
+      <p class="sx-eyebrow">SON SAYFA DEĞİL · YENİ BİR BAŞLANGIÇ</p><span class="sx-end-heart" aria-hidden="true">♥</span>
+      <h2 id="sx-end-title" class="sx-end-title">22 yaşında da,<br>82 yaşında da…</h2>
+      <p class="sx-end-message">İyi ki varsın, <em>Ceren.</em></p><p class="sx-end-sub">Daha nice birlikte yazacağımız bölümlere. 🤍</p>
+      <button class="sx-end-button" id="sxEndCelebrate" type="button">Bir kez daha kutlayalım ↗</button>
+    </div></section>
+
+  </main>
+
+  <footer class="footer"><span>MADE FOR CEREN, WITH ALL MY HEART.</span><a href="#home">BAŞA DÖN ↑</a><span>15.10.2026 · CHAPTER 22</span></footer>
+
+  <div class="modal" id="letterModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true"><div class="modal-backdrop" data-close-modal></div><div class="modal-panel" role="document"><button type="button" class="modal-close" id="closeLetter" aria-label="Mektubu kapat">×</button><div class="modal-overline">TO CEREN, FROM MY HEART</div><h2 id="modalTitle">Sevgilim,</h2><div id="letterBody" class="letter-body"></div><p class="letter-sign">Her şeyin en güzelinde,<br><em>seninle.</em> ♡</p></div></div>
+  <div class="modal photo-modal" id="photoModal" role="dialog" aria-modal="true" aria-label="Fotoğraf" aria-hidden="true"><div class="modal-backdrop" data-close-photo></div><div class="photo-modal-panel"><button type="button" class="modal-close" id="closePhoto" aria-label="Fotoğrafı kapat">×</button><img id="expandedPhoto" alt="Birlikte anımız"><p id="expandedCaption"></p></div></div>
+
+
+  <div class="sx-secret-modal" id="sxSecretModal" role="dialog" aria-modal="true" aria-labelledby="sxSecretHeading" aria-hidden="true"><div class="sx-secret-shade" data-sx-close></div><div class="sx-secret-paper"><button type="button" class="sx-secret-close" id="sxSecretClose" aria-label="Mektubu kapat">×</button><p class="sx-eyebrow">SADECE CEREN'E</p><h2 id="sxSecretHeading">Sevgilim,</h2><p>Belki bazen yan yana olduğumuz anlar çok hızlı geçiyor. Ama ben en küçük anımızı bile kalbimin bir köşesinde saklıyorum.</p><p>Seninle geçirdiğim bu zaman bana bir şeyi öğretti: Mutluluk bazen büyük olaylarda değil, bir gülüşte, bir mesajda, yan yana geçen sıradan bir dakikada gizli.</p><p>Bugün senin günün. Dilerim yeni yaşında kalbinin istediği her güzel şey sana ulaşır. Ve ben de o güzel anlarının bir parçası olabilirim.</p><p class="sx-secret-sign">İyi ki varsın. Seni seviyorum. ♡</p></div></div>
+
+  <audio id="backgroundMusic" src="sarkimiz.mp3" loop preload="none"></audio>
+</body>
+</html>

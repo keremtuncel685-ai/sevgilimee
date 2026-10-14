@@ -1,0 +1,40 @@
+CEREN CHAPTER 22 - YENIDEN YAYINLAMA REHBERI
+
+Bu ZIP icindeki kodlar index.html ile AYNI ANA KLASORE konulmalidir.
+ZIP dosyasini oldugu gibi GitHub'a yuklemeyin: Once bilgisayarda cikartin.
+
+1. GitHub repo: keremtuncel685-ai/sevgilime
+2. Eski kodlari silmeden once bir yedegini alin. Yeni dosyalari yuklerken eski kodlari ustune yazin veya bos repo olusturun.
+3. ZIP'teki index.html, 6 CSS, 6 JS ve .nojekyll dosyasini repoda EN UST seviyeye yukleyin.
+4. KENDI medya dosyalarinizi da EN UST seviyeye yukleyin (bu pakette ozel fotograflar, videolar, mp3 bulunmuyor):
+   foto1.jpg ... foto8.jpg
+   neden01.jpg ... neden22.jpg (iki basamakli: neden01, neden02, ...)
+   video1.mp4, video2.mp4, video3.mp4
+   sarkimiz.mp3
+   (Opsiyonel video4.mp4 sitede kullanilmiyor.)
+5. Dikkat: Buyuk ara fotograf icin foto1.jpg kullaniliyor; biz.jpg gerekmiyor.
+6. GitHub -> Settings -> Pages -> Build and deployment: Deploy from a branch, main, /(root), Save.
+7. Actions/Pages yayini bitince siteyi gizli pencerede kontrol edin.
+   https://keremtuncel685-ai.github.io/sevgilime/
+   https://keremtuncel685-ai.github.io/sevgilime/foto1.jpg
+   https://keremtuncel685-ai.github.io/sevgilime/neden01.jpg
+   https://keremtuncel685-ai.github.io/sevgilime/video1.mp4
+   https://keremtuncel685-ai.github.io/sevgilime/sarkimiz.mp3
+8. Dogum gunu kilidi 15 Ekim 2026 00:00 Turkiye saatinde acilir.
+   Saat cihazin saatine baglidir. Gizli erisim korumasi degildir.
+9. Birliktelik sayaci 25 Mayis 2026 00:00 Turkiye saatini baslangic kabul eder.
+   Kesin baslangic saati biliniyorsa surprises.js dosyasinda degistirin.
+10. Dosya adlarinda BUYUK/kucuk harf farkina dikkat edin. Ornek: foto1.jpg ile Foto1.JPG farklidir.
+11. GitHub Pages herkese aciktir. Ozel medya dosyalarina dogrudan baglantiyla erisilebilir.
+
+KONTROL LISTESI
+[ ] Sayac gece yarisi sonrasinda aciliyor
+[ ] Sinematik giris ve GEC dugmesi calisiyor
+[ ] 8 foto galeri ve kaydirilan film seridi
+[ ] 22 neden fotografi
+[ ] 3 video oynuyor
+[ ] MP3 her iki oynat dugmesinde calisiyor
+[ ] 25 Mayis sayaci calisiyor
+[ ] 99 dil animasyonu, mum, mektuplar, hediye, yildizlar
+
+NOT: Video4.mp4 bu tasarimda tanimli degildir. Sitede gostermek icin ek kod gerekir.
